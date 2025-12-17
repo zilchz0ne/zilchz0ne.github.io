@@ -1,0 +1,50 @@
+* {
+    all: unset;
+    box-sizing: border-box;
+}
+
+/* body setup */
+body {
+    display: block;
+    width: 100%;
+    height: 100%;
+    background-color: #111;
+    color: #eee;
+    font-family: "Consolas", monospace;
+    /* text-align: center; */
+    padding: 40px;
+    line-height: 1.5;
+}
+
+/* restore div basics */
+div {
+    display: block;
+}
+
+/* dialogue text */
+.ww_text {
+    display: inline-block;
+    margin-bottom: 6px;
+    color: #f0f0f0;
+}
+
+/* input area */
+.ww_text_input {
+    display: inline-block;
+    min-width: 140px;
+    padding: 2px 4px;
+    border-bottom: 2px solid #ff8c00;
+    color: #ffb657;
+}
+
+/* printed output */
+.ww_text_output {
+    display: inline-block;
+    padding: 2px 4px;
+    color: #ffca7a;
+}
+
+/* spacing between blocks */
+#page_1 > * {
+    margin: 3px 0;
+}
