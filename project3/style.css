@@ -1,0 +1,46 @@
+body {
+    margin: 0;
+    background: #050505;
+    color: #33ff33;
+    font-family: "Courier New", monospace;
+    overflow: hidden;
+}
+
+.crt {
+    width: 100vw;
+    height: 100vh;
+    background:
+        repeating-linear-gradient(
+            0deg,
+            rgba(0,0,0,0.2),
+            rgba(0,0,0,0.2) 1px,
+            transparent 1px,
+            transparent 2px
+        );
+    animation: flicker 0.15s infinite;
+}
+
+.console {
+    padding: 30px;
+    text-shadow: 0 0 6px #33ff33;
+    white-space: pre-wrap;
+}
+
+.cursor {
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+a {
+    color: #33ff33;
+}
+
+@keyframes blink {
+    50% { opacity: 0; }
+}
+
+@keyframes flicker {
+    0% { opacity: 0.96; }
+    50% { opacity: 1; }
+    100% { opacity: 0.98; }
+}
